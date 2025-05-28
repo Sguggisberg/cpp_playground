@@ -2,10 +2,8 @@
 
 int main()
 {
-    int *p = new int; // get mmory on heap
-    *p = 4;
 
-    //    int *p = new int{4}; // get mmory on heap
+   int *p = new int{4}; // get mmory on heap alloc
 
     std::cout << "address of p: " << &p << std::endl;
     std::cout << "point to: " << p << std::endl;
@@ -16,7 +14,9 @@ int main()
     std::cout << "point to: " << p << std::endl;
     std::cout << "value: " << *p << std::endl;
 
-    delete p;
-
+   // delete p;
+    std::cout << "address of p: " << &p << std::endl;
+    std::cout << "point to: " << p << std::endl;
+    std::cout << "value: " << *p << std::endl;
     return 0;
 }
