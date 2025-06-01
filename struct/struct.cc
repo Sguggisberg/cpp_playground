@@ -1,6 +1,6 @@
 #include <iostream>
 
-enum Role
+enum class Role
 {
     ADMIN,
     USER
